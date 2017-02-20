@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>蝉原则下随机圆角效果</title>
+    <style type="text/css">
+body{
+  background-color: #2B3038;
+  margin:0 auto;
+  text-align:center
+}
+.constr{
+    margin: 10px;
+}
+.name{
+    margin-right: 30px;
+}
+.list {
+  margin: 10px;
+  display: inline-block;
+  width: 170px; height: 170px;
+  border: 4px solid #00C7E9;
+  border-radius: 87% 91% 98% 100%;
+  -webkit-transition: all .40s;
+  transition: all .40s;
+  overflow: hidden;
+}
+.author{
+  margin: 60px;
+  display: inline-block;
+  overflow: hidden;
+}
+.list:hover {
+  border-radius: 95% 70% 100% 80%;
+  transform: rotate(-2deg);
+}
+
+.list:nth-child(2n+1) {
+  border-radius: 59% 52% 56% 59%;
+  transform: rotate(-6deg);
+}
+
+.list:nth-child(2n+1):hover {
+  border-radius: 51% 67% 56% 64%;
+  transform: rotate(-4deg);
+}
+
+.list:nth-child(3n+2) {
+  border-radius: 84% 94% 83% 72%;
+  transform: rotate(5deg);
+}
+
+.list:nth-child(3n+2):hover {
+  border-radius: 69% 64% 53% 70%;
+  transform: rotate(0deg);
+}
+
+.list:nth-child(5n+3) {
+  border-radius: 73% 100% 82% 100%;
+  transform: rotate(7deg);
+}
+
+.list:nth-child(5n+3):hover {
+  border-radius: 73%;
+  transform: rotate(7deg);
+}
+
+.list:nth-child(7n+5) {
+  border-radius: 93% 90% 85% 78%;
+  transform: rotate(-2deg);
+}
+
+.list:nth-child(7n+5):hover {
+  border-radius: 53% 70% 85% 68%;
+  transform: rotate(-2deg);
+}
+
+.list:nth-child(11n+7) {
+  border-radius: 68% 68% 83% 53%;
+  transform: rotate(-2deg);
+}
+
+.list:nth-child(11n+7):hover {
+  border-radius: 58% 98% 78% 83%;
+  transform: rotate(3deg);
+}
+a{
+  text-decoration: none;
+  font-size: 25px;
+  color: #00C7E9;
+}
+a:hover{
+  color: #ffffff;
+}
+    </style>
+</head>
+<body>
+    <div class="constr">
+      <div class="list">
+        <img src="img/1.png">
+      </div>
+      <div class="list">
+        <img src="img/2.png">
+      </div>
+      <div class="list">
+        <img src="img/3.png">
+      </div>
+      <div class="list">
+        <img src="img/4.png">
+      </div>
+    </div>
+    <div class="name">
+      <div class="author">
+        <p><a href="#">无门和尚</a></p>
+      </div>
+      <div class="author">
+        <p><a href="#">李商隐</a></p>
+      </div>
+      <div class="author">
+        <p><a href="#">晏几道</a></p>
+      </div>
+      <div class="author">
+        <p><a href="#">张籍</a></p>
+      </div>
+    </div>
+</body>
+</html>
